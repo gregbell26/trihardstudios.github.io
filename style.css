@@ -1,6 +1,62 @@
 @charset "utf-8";
 /* JESUS CHRIST SAVE MY SOUL*/
+/*Animations */
+@keyframes hover{
+	0%{
+		color:#000;
+		background-color: #ffb84d;
+	}
+	
+	100% {
+		color: #fff;
+		background-color: hsla(0,0%,100%,0.50);
+	}
+}
+@keyframes onClick {
+	0% {
+		background-color: hsla(0,0%,100%,0.50);
+		border-radius: 500px;
+	}
+	
+	/*25% {
+		border-radius:10px;
+	}
+	
+	30% {
+		background-color: #ffb84d;
+		border-radius: 0px;
+	}
+	31% {
+		background-color: hsla(0,0%,100%,0.60);
+		border-radius: 75px;
+	}
+	
+	50% {
+		border-radius:10px;
+	}
+	
+	55% {
+		background-color: #ffb84d;
+		border-radius: 0px;
+	}
+	56% {
+		background-color: hsla(0,0%,100%,0.70);
+		border-radius: 50px;
+	}
+	
+	75% {
+		border-radius:5px;
+	}*/
+	
+	100% {
+		background-color: #ffb84d;
+		border-radius: 0px;
+	}
+	
+}
 
+
+/*General Purpose*/
 *{
 	margin:0;
 	padding:0;
@@ -19,7 +75,7 @@ div{
 .shadow {
 	box-shadow: 2px 1.5px 5px 5px #303030;
 }
-
+/*Nav Bar*/
 
 div .navbar ul {
 	
@@ -43,8 +99,21 @@ div .navbar li a {
 }
 
 div .navbar li a:hover {
-    color: #fff;	
+	animation-name: hover;
+	animation-duration: .25s;
+	color: #fff;
+	background-color: hsla(0,0%,100%,0.50);
 }
+
+div .navbar li:active {
+    animation-name: onClick;
+    animation-duration: 1s;
+	animation-iteration-count: 3;
+	animation-delay: -1s;
+	
+}
+
+
 
 /*body nonsense*/
 body {
