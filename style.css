@@ -18,7 +18,7 @@
 		border-radius: 500px;
 	}
 	
-	/*25% {
+	25% {
 		border-radius:10px;
 	}
 	
@@ -46,7 +46,7 @@
 	
 	75% {
 		border-radius:5px;
-	}*/
+	}
 	
 	100% {
 		background-color: #ffb84d;
@@ -107,10 +107,7 @@ div .navbar li a:hover {
 
 div .navbar li:active {
     animation-name: onClick;
-    animation-duration: 1s;
-	animation-iteration-count: 3;
-	animation-delay: -1s;
-	
+    animation-duration: 1s;	
 }
 
 
