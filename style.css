@@ -40,7 +40,7 @@ div.header{
 	padding-right: 10px;
 	font-family: 'Roboto Slab', serif;
 	color:#000;
-    box-shadow:  0 4px 3px 1px rgba(0,0,0,0.3);
+    box-shadow:  0 4px 4px .5px rgba(0,0,0,0.1);
 }
 
 /*Nav Bar*/
@@ -101,7 +101,7 @@ body div.headerTextBox {
 	margin-right: auto;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
-	box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.3);
+	box-shadow: 1px 1px 4px .5px rgba(0,0,0,0.1);
 	padding: 10px ;
 	width:90%;
 	height: auto;
@@ -119,7 +119,7 @@ body div.noImgTextBox {
 	margin-right: auto;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
-    box-shadow:  1px 4px 3px 1px rgba(0,0,0,0.3);
+    box-shadow:  1px 4px 4px .5px rgba(0,0,0,0.1);
 	padding: 10px;
 	width:90%;
 	height: auto;
@@ -134,7 +134,7 @@ body div.imgTextBox {
 	margin-right: auto;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
-    box-shadow:  1px 4px 3px 1px rgba(0,0,0,0.3);
+    box-shadow:  1px 4px 4px .5px rgba(0,0,0,0.1);
 	padding: 10px;
 	width:90%;
 	height: auto;
