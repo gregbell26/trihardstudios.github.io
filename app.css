@@ -70,16 +70,18 @@ img {
 .app_inline_img {
     height: .8em;
     width: .8em;
-    margin: 0 15px 0 -10px;
+    margin: 0 15px 0 0;
 }
 
 .mp_listLink:after {
     position: absolute;
-    content: " ";
+    content: "▶";
     margin-left: 15px;
+    opacity: 0;
+    transition: opacity 100ms;
 }
 .mp_listLink:hover:after{
-    content: "▶";
+    opacity: 1
 }
 
 .force_accent_color {
@@ -129,7 +131,10 @@ img {
     }
     .app_text{
         font-size: 2.25vw;
-
+    }
+    .mp_listLink {
+        display: inline-block;
+        margin-bottom: 2vh;
     }
 
     #mp_content_text{
