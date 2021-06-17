@@ -56,7 +56,8 @@ img {
 
 .app_text{
     font-family: 'Open Sans', sans-serif;
-}
+    font-size: 1.5vw;
+    color: var(--color-secondary);}
 
 .app_fullSize_img {
     width: auto;
@@ -64,6 +65,13 @@ img {
 }
 .app_loaded_img {
     opacity: 1;
+}
+
+.mp_listLink:after {
+    content: " ";
+}
+.mp_listLink:hover:after{
+    content: "▶";
 }
 
 .force_accent_color {
@@ -111,6 +119,10 @@ img {
     .app_des{
         font-size: 1.5vw;
     }
+    .app_text{
+        font-size: 2.25vw;
+
+    }
 
     #mp_content_text{
         width: 100%;
@@ -126,6 +138,10 @@ img {
         font-size: 3vw;
         align-self: flex-start;
         margin-bottom: 10px;
+    }
+    .app_text{
+        font-size: 3.5vw;
+
     }
 
     #mp_header_ths{
