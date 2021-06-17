@@ -63,12 +63,20 @@ img {
     width: auto;
     height: auto;
 }
-.app_loaded_img {
+.app_loaded_img, .app_inline_img{
     opacity: 1;
 }
 
+.app_inline_img {
+    height: .8em;
+    width: .8em;
+    margin: 0 15px 0 -10px;
+}
+
 .mp_listLink:after {
+    position: absolute;
     content: " ";
+    margin-left: 15px;
 }
 .mp_listLink:hover:after{
     content: "▶";
