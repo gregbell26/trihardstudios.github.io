@@ -10,13 +10,14 @@
 <!--        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">&lt;!&ndash;Roboto Slab 200&ndash;&gt;-->
 <!--        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">&lt;!&ndash;Open Sans 400&ndash;&gt;-->
         <link rel="stylesheet" type="text/css" href="app.css">
+        <script src="app.js"></script>
 
     </head>
     <body>
         <div id="app_mainPage" class="app_page page_active">
             <div id="mp_content_text">
                 <div id="mp_header" class="app_header">
-                    <span class="force_normal_font">TriHard Studios</span> <span class="force_accent_color ">Gregory Bell</span>
+                    <span id="mp_header_ths" class="force_normal_font force_accent_color">TriHard Studios</span> <span class=" ">Gregory Bell</span>
                 </div>
                 <div id="mp_des" class="app_des">
                     developer | designer | photographer
@@ -32,7 +33,8 @@
                 </div>
             </div>
             <div id="mp_content_img">
-                <img src="assets/img/mp/self_picture_2.jpg" alt="self_picture_2_samsaliba.com" class="app_fullSize_img">
+                <img src="assets/img/mp/self_picture_2.jpg" alt="self_picture_2_samsaliba.com" class="app_fullSize_img"
+                    onload="fadeInImage(this)">
                 <div class="app_des">
                     credit: Sam Saliba (<a href="https://samsaliba.com">samsaliba.com</a>)
                 </div>
@@ -45,4 +47,5 @@
         </div>
 
     </body>
+
 </html>

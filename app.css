@@ -24,7 +24,10 @@ a {
 a:visited {
     color: unset;
 }
-
+img {
+    opacity: 0;
+    transition: opacity 500ms, border-radius 500ms, object-position 500ms;
+}
 
 .app_page{
     display: none;
@@ -50,21 +53,29 @@ a:visited {
     align-self: center;
     font-size: 1.25vw;
 }
+
+.app_text{
+    font-family: 'Open Sans', sans-serif;
+}
+
 .app_fullSize_img {
     width: auto;
     height: auto;
 }
+.app_loaded_img {
+    opacity: 1;
+}
 
 .force_accent_color {
-    color: var(--color-accent) !important;
+    color: var(--color-accent);
 }
 
 .force_normal_font {
-    font-weight: 400 !important;
+    font-weight: 400;
 }
 
 .force_thin_font {
-    font-weight: 200 !important;
+    font-weight: 200;
 }
 
 #mp_content_text {
@@ -82,24 +93,67 @@ a:visited {
     width: calc(100% - 42vw);
 }
 #mp_content_img img {
-    max-width: 29vw;
-    max-height: 43vw;
+    max-width: 30vw;
+    max-height: 70vh;
 }
 
 
-@media screen and  (max-width: 2000px){
-    #mp_content_text{
-        width: 100%;
-    }
+@media screen and (max-width: 2000px){
     .app_page{
         width: calc(100% - 30px);
         align-items: flex-start;
     }
     .app_header{
-        text-align: justify;
-        text-justify: inter-word;
-        font-size: 7vw;    }
+        /*text-align: justify;*/
+        /*text-justify: inter-word;*/
+        font-size: 7vw;
+    }
     .app_des{
         font-size: 1.5vw;
     }
+
+    #mp_content_text{
+        width: 100%;
+    }
 }
+
+
+@media screen and (max-width: 1000px) {
+    .app_header {
+        font-size: 10vw;
+    }
+    .app_des {
+        font-size: 3vw;
+        align-self: flex-start;
+        margin-bottom: 10px;
+    }
+
+    #mp_header_ths{
+        display: none;
+    }
+
+    #mp_content_img {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width:250px;
+    }
+    #mp_content_img img {
+        width: 250px;
+        height: 250px;
+        border-radius: 100%;
+        object-fit: cover;
+        object-position: 0 0%;
+    }
+    #mp_content_img .app_des{
+        display: none;
+    }
+}
+
+@media screen and (max-height: 500px){
+    #mp_content_img{
+        align-self: center;
+    }
+
+}
+
