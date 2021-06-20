@@ -13,17 +13,16 @@
         <div id="app_mainPage" class="app_page page_active">
             <div id="mp_content_text">
                 <div id="mp_header" class="app_header">
-                    <span id="mp_header_ths" class="force_normal_font force_accent_color">TriHard Studios</span> <span class=" ">Gregory Bell</span>
+                    <span class="force_normal_font force_accent_color header_hideable">TriHard Studios</span> <span class=" ">Gregory Bell</span>
                 </div>
                 <div id="mp_des" class="app_des">
-                    developer | designer | photographer
+                    developer | photographer | student
                 </div>
                 <div id="mp_blurb" class="app_text">
-                    <div class="app_textImg"><img src="assets/img/mp/mp_edu_rough.svg" class="app_inline_img"><a class="mp_listLink" href="">Education</a></div>
-                    <div class="app_textImg"><img src="assets/img/mp/mp_edu_rough.svg" class="app_inline_img"><a class="mp_listLink" href="">Work Experience</a></div>
-                    <div class="app_textImg"><img src="assets/img/mp/mp_edu_rough.svg" class="app_inline_img"><a class="mp_listLink" href="">Portfolio</a></div>
+                    <div class="app_textImg"><img src="assets/img/mp/mp_edu_rough.svg" class="app_inline_img"><span class="mp_listLink" onclick="changePage(document.getElementById('app_educationPage'))">Education</span></div>
+                    <div class="app_textImg"><img src="assets/img/mp/mp_edu_rough.svg" class="app_inline_img"><span class="mp_listLink" onclick="changePage(document.getElementById('app_mainPage'))">Employment</span></div>
+                    <div class="app_textImg"><img src="assets/img/mp/mp_edu_rough.svg" class="app_inline_img"><span class="mp_listLink" onclick="changePage(document.getElementById('app_mainPage'))">Portfolio</span></div>
                     <div id="mp_icons">
-
                     </div>
                 </div>
             </div>
@@ -35,6 +34,18 @@
                 </div>
             </div>
 
+        </div>
+
+        <div id="app_educationPage" class="app_page force_top">
+            <div id="ep_content_test">
+                <div class="app_text app_back force_accent_color" onclick="changePage(document.getElementById('app_mainPage'))">Back</div>
+                <div id="ep_header" class="app_header">
+                    <span class="force_normal_font force_accent_color header_hideable">Gregory</span> Education
+                </div>
+
+
+
+            </div>
         </div>
 
         <div id="app_portfolioPage" class="app_page">

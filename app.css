@@ -36,9 +36,12 @@ img {
     align-items: center;
     justify-content: flex-start;
     padding: 15px;
+    opacity: 0;
+    transition: opacity 1500ms;
 }
 .page_active {
     display: flex;
+    opacity: 1;
 }
 .app_header {
     font-family: 'Roboto Slab', serif;
@@ -72,16 +75,30 @@ img {
     width: .8em;
     margin: 0 15px 0 0;
 }
-
+.mp_listLink {
+    cursor: pointer;
+}
 .mp_listLink:after {
     position: absolute;
-    content: "▶";
+    content: "❯";
     margin-left: 15px;
     opacity: 0;
     transition: opacity 100ms;
 }
 .mp_listLink:hover:after{
     opacity: 1
+}
+.app_back:hover {
+    cursor: pointer;
+}
+.app_back:before {
+    content: "❮";
+    margin-right: 15px;
+    opacity: 0;
+    transition: opacity 100ms;
+}
+.app_back:hover:before{
+    opacity: 1;
 }
 
 .force_accent_color {
@@ -94,6 +111,10 @@ img {
 
 .force_thin_font {
     font-weight: 200;
+}
+
+.force_top {
+    align-items: flex-start;
 }
 
 #mp_content_text {
@@ -157,7 +178,7 @@ img {
 
     }
 
-    #mp_header_ths{
+    .header_hideable{
         display: none;
     }
 
