@@ -164,7 +164,7 @@ img {
     padding-left: 5px;
 }
 
-@media screen and (max-width: 2000px){
+@media screen and (max-width: 1500px){
     .app_page{
         width: calc(100% - 30px);
         align-items: flex-start;
@@ -172,20 +172,20 @@ img {
     .app_header{
     /*text-align: justify;*/
     /*text-justify: inter-word;*/
-    font-size: 7vw;
+    font-size: 6.5vw;
     }
     .app_des{
-        font-size: 1.5vw;
+        font-size: 1vw;
     }
     .app_text{
-        font-size: 2.25vw;
+        font-size: 2vw;
     }
     .app_subHeader{
-        font-size: 4vw;
+        font-size: 3.25vw;
     }
 
     .app_list li{
-        font-size: 2.25vw;
+        font-size: 2vw;
     }
     .mp_listLink {
         display: inline-block;
