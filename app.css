@@ -68,15 +68,24 @@ img {
     font-size: 1.5vw;
     color: var(--color-secondary);
 }
+.app_subsectionButton {
+    font-size: 1.75vw;
+    font-family: 'Roboto Slab';
+    cursor: pointer;
+}
+
+.app_subsectionContent {
+
+}
 
 .app_list {
-    padding: 10px;
+    /* padding: 10px; */
     list-style: none;
 }
 
 .app_list li {
     font-family: 'Open Sans', sans-serif;
-    font-size: .75vw;
+    font-size: 1vw;
     margin-bottom: 5px;
 }
 
@@ -94,6 +103,10 @@ img {
     margin: 0 15px 0 0;
 }
 
+.mp_listLink {
+    cursor: pointer;
+}
+
 .app_back:hover {
     cursor: pointer;
 }
@@ -106,9 +119,25 @@ img {
 .app_back:hover:before{
     opacity: 1;
 }
-.mp_listLink {
-    cursor: pointer;
+
+.app_subsectionButton:after{
+    content: "❯";
+    margin-right: 15px;
+    opacity: 0;
+    transition: opacity 100ms;
+    transition: transform 100ms;
 }
+.app_subsectionButton:hover:after{
+    opacity: 1;
+}
+.app_subsectionButton:focus:after {
+    display:inline-block;
+    transform: rotate(90deg);
+    opacity: 1;
+}
+
+
+
 .mp_listLink:after {
     position: absolute;
     content: "❯";
@@ -119,9 +148,9 @@ img {
 .mp_listLink:hover:after{
     opacity: 1
 }
-.ep_section {
+/* .ep_section {
     padding: 10px;
-}
+} */
 
 .force_accent_color {
     color: var(--color-accent);
@@ -158,6 +187,7 @@ img {
     max-height: 70vh;
 }
 
+
 .ep_section .app_text {
     font-size: 1.25vw;
     color: var(--color-accent);
@@ -166,7 +196,8 @@ img {
 
 @media screen and (max-width: 1500px){
     .app_page{
-        width: calc(100% - 30px);
+        /* width: calc(100% - 30px); */
+        width: 75%;
         align-items: flex-start;
     }
     .app_header{
@@ -199,9 +230,16 @@ img {
     .ep_section .app_text {
         font-size: 3vw;
     }
+    .des_hideable{
+        display: none;
+    }
 
     #mp_content_text{
         width: 100%;
+    }
+    #app_mainPage {
+        width: calc(100% - 30px);
+
     }
 
 }
