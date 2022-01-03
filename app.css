@@ -38,8 +38,8 @@ img {
     padding: 15px;
     opacity: 0;
     transition: opacity 1500ms;
-    /*overflow: scroll;*/
-}
+    overflow-x: hidden;
+    overflow-y: auto;}
 .page_active {
     display: flex;
     opacity: 1;
