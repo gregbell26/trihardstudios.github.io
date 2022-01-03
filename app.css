@@ -38,7 +38,7 @@ img {
     padding: 15px;
     opacity: 0;
     transition: opacity 1500ms;
-    overflow: scroll;
+    /*overflow: scroll;*/
 }
 .page_active {
     display: flex;
@@ -68,6 +68,7 @@ img {
     font-size: 1.5vw;
     color: var(--color-secondary);
 }
+
 .app_subsectionButton {
     font-size: 1.75vw;
     font-family: 'Roboto Slab';
@@ -75,6 +76,11 @@ img {
 }
 
 .app_subsectionContent {
+    display: block;
+    opacity: 0;
+    overflow: hidden;
+    height: 0;
+    transition: opacity 100ms;
 
 }
 
@@ -122,21 +128,15 @@ img {
 
 .app_subsectionButton:after{
     content: "❯";
-    margin-right: 15px;
+    margin-left: 15px;
     opacity: 0;
     transition: opacity 100ms;
     transition: transform 100ms;
 }
+
 .app_subsectionButton:hover:after{
     opacity: 1;
 }
-.app_subsectionButton:focus:after {
-    display:inline-block;
-    transform: rotate(90deg);
-    opacity: 1;
-}
-
-
 
 .mp_listLink:after {
     position: absolute;
@@ -194,10 +194,22 @@ img {
     padding-left: 5px;
 }
 
+.app_subsectionButton.app_subsection_show:after{
+    display:inline-block;
+    transform: rotate(90deg) translate(3px, 0);
+    opacity: 1;
+}
+
+.app_subsectionContent.app_subsection_show {
+    height: auto;
+    opacity: 1;
+    overflow: initial;
+}
+
 @media screen and (max-width: 1500px){
     .app_page{
-        /* width: calc(100% - 30px); */
-        width: 75%;
+         /*width: calc(100% - 30px);*/
+        /*width: 75%;*/
         align-items: flex-start;
     }
     .app_header{

@@ -50,7 +50,7 @@
                     <ul class="app_list">
                         <li>Attending Fall 2021 - Current</li>
                         <li>Computer Science</li>
-                        <li>First Year</li>
+                        <li>GPA: 3.73</li>
                     </ul>
                 </div>
                 <div id="ep_secondaryEdu" class="ep_section">
@@ -77,7 +77,8 @@
                 </div>
 
                 <div class="app_subHeader force_accent_color">Miscellaneous</div>
-                <div id="emp_retail_button" class="app_subsectionButton">
+                <div id="emp_retail_button" class="app_subsectionButton" onclick="
+                    toggleSubSection(document.getElementById('emp_retail_button'), document.getElementById('emp_retail_content'))">
                     Retail
                 </div>
                 <div id="emp_retail_content" class="app_subsectionContent">
@@ -92,7 +93,9 @@
                     </div>
                 </div>
 
-                <div id="emp_technicalTheatre_button" class="app_subsectionButton">
+                <div id="emp_technicalTheatre_button" class="app_subsectionButton" onclick="
+                    toggleSubSection(document.getElementById('emp_technicalTheatre_button'), document.getElementById('emp_technicalTheatre_content'))">
+
                     Technical Theatre
                 </div>
                 <div id="emp_technicalTheatre_content" class="app_subsectionContent">
@@ -100,6 +103,7 @@
                         <div class="app_text">A/V Technician</div>
                         <ul class="app_list">
                             <li>Monarch High: August 2018 - May 2019</li>
+                        </ul>
                         <div class="app_text">Live Sound</div>
                         <ul class="app_list">
                             <li><b>2019</b></li>

@@ -14,3 +14,15 @@ function changePage(_page){
     }
     _page.classList.add("page_active");
 }
+
+function toggleSubSection(_button, _content){
+    console.log(_button.innerText)
+    if(_button.classList.contains("app_subsection_show")){
+        _content.classList.remove("app_subsection_show")
+        _button.classList.remove("app_subsection_show")
+    }
+    else {
+        _content.classList.add("app_subsection_show")
+        _button.classList.add("app_subsection_show")
+    }
+}
