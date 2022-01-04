@@ -64,6 +64,18 @@ img {
     font-size: 1.25vw;
 }
 
+.app_back {
+    user-select: none;
+}
+
+.app_listLink {
+    user-select: none;
+}
+
+.app_textImg {
+    user-select: none;
+}
+
 .app_text{
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5vw;
@@ -74,6 +86,7 @@ img {
     font-size: 1.75vw;
     font-family: 'Roboto Slab';
     cursor: pointer;
+    user-select: none;
 }
 
 .app_subsectionContent {
@@ -199,8 +212,10 @@ img {
 .emp_des {
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
-    margin: 5px 10px 0px;
+    margin: 5px 10px 0;
     font-size: 1vw;
+    inline-size: 50%;
+    overflow-wrap: normal;
 }
 
 .app_subsectionButton.app_subsection_show:after{
@@ -258,7 +273,7 @@ img {
         font-size: 2.5vw;
     }
     .emp_des {
-        font-size: 2vw;
+        font-size: 1.25vw;
     }
     .des_hideable{
         display: none;
