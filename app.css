@@ -39,7 +39,8 @@ img {
     opacity: 0;
     transition: opacity 1500ms;
     overflow-x: hidden;
-    overflow-y: auto;}
+    overflow-y: auto;
+}
 .page_active {
     display: flex;
     opacity: 1;
@@ -81,11 +82,11 @@ img {
     overflow: hidden;
     height: 0;
     transition: opacity 100ms;
-
+    margin-left: 10px;
 }
 
 .app_list {
-    /* padding: 10px; */
+     padding: 10px;
     list-style: none;
 }
 
@@ -93,6 +94,7 @@ img {
     font-family: 'Open Sans', sans-serif;
     font-size: 1vw;
     margin-bottom: 5px;
+    padding-left: 10px;
 }
 
 .app_fullSize_img {
@@ -188,10 +190,17 @@ img {
 }
 
 
-.ep_section .app_text {
+.emp_section .app_text {
     font-size: 1.25vw;
     color: var(--color-accent);
     padding-left: 5px;
+}
+
+.emp_des {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    margin: 5px 10px 0px;
+    font-size: 1vw;
 }
 
 .app_subsectionButton.app_subsection_show:after{
@@ -215,7 +224,7 @@ img {
     .app_header{
     /*text-align: justify;*/
     /*text-justify: inter-word;*/
-    font-size: 6.5vw;
+    font-size: 5.5vw;
     }
     .app_des{
         font-size: 1vw;
@@ -224,23 +233,32 @@ img {
         font-size: 2vw;
     }
     .app_subHeader{
-        font-size: 3.25vw;
+        font-size: 2.75vw;
     }
 
     .app_list li{
-        font-size: 2vw;
+        font-size: 1.75vw;
     }
     .mp_listLink {
         display: inline-block;
-        margin-bottom: 2vh;
+        margin-bottom: 1.75vh;
     }
 
-    .ep_section{
+    .emp_section{
         padding: unset;
     }
 
-    .ep_section .app_text {
-        font-size: 3vw;
+    .app_subsectionButton {
+        margin-bottom: 10px;
+        margin-top: 5px;
+        font-size: 2.75vw;
+    }
+
+    .emp_section .app_text {
+        font-size: 2.5vw;
+    }
+    .emp_des {
+        font-size: 2vw;
     }
     .des_hideable{
         display: none;
@@ -259,10 +277,10 @@ img {
 
 @media screen and (max-width: 1000px) {
     .app_header {
-        font-size: 10vw;
+        font-size: 8vw;
     }
     .app_subHeader{
-        font-size: 5vw;
+        font-size: 4vw;
     }
     .app_des{
         font-size: 1.5vw;
@@ -281,15 +299,27 @@ img {
     .app_list li {
         font-size: 2.5vw;
     }
-    .ep_section {
+    .emp_section {
         margin-top: -20px;
     }
+    .app_subsectionButton {
+        margin-bottom: 25px;
+        font-size: 4vw;
+    }
+    .app_subsectionContent{
+        margin-top: 10px;
+    }
+
     .header_hideable{
         display: none;
     }
 
-    .ep_section .app_text {
-        font-size: 4vw;
+    .emp_section .app_text {
+        font-size: 3.25vw;
+    }
+
+    .emp_des {
+        display: none
     }
 
     #mp_content_img {
